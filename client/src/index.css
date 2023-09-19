@@ -1,0 +1,165 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  background-color: #efeef1;
+}
+
+Button {
+  margin: 0.5rem;
+}
+
+/* -----------App Component-------------- */
+
+.App-container {
+}
+
+/* ----------------HomePage Components---------- */
+
+.home-out-container {
+  height: 100%;
+}
+.LoginSignupBtn-container {
+  display: flex;
+  justify-content: end;
+}
+/* ---------------------Auth Components-------------- */
+.LoginSignupButton {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.overlay h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+}
+
+.ant-input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 80%;
+  margin: 0 auto;
+}
+/* -----------------SearchPage Components--------------- */
+.search-page-container {
+  width: 100vw;
+}
+
+.MuiTypography-root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-field-search-page {
+  width: 80%;
+}
+
+/* --------------------ProfileSettings Components---------------- */
+.profile-settings {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* -----------------------MyPetsPage------------------------ */
+.my-pets-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.My-pets-toggle-button {
+  margin-top: 10px;
+}
+
+.my-pets-card-container {
+  margin-top: 10px;
+}
+
+/* ---------------------------SearchPage-------------------------------- */
+
+.search-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.search-results {
+  margin-top: 20px;
+}
+
+
+
+/* -------------------Images------------ */
+.my-dog-img {
+  background-size:cover;
+  background-repeat:no-repeat ;
+  background-position: center;
+  width: 100%;
+  height: 72vh;
+}
+
+/* .add-pet-container {
+  height: ;
+} */
+.MuiContainer-root {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.MuiCardMedia-root {
+  min-width: 500px;
+}
