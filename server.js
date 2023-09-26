@@ -24,7 +24,16 @@ const petRoute = require("./routes/petRoute");
 // Global Middleware | API's
 app.use("/user/auth", authRoute);
 app.use("/users/user", userRoute);
-app.use("/pet", petRoute);
+app.use("/pet", petRoute)
+
+// Add the build directory
+const pathToBuild = path.resolve(__dirname, "./client/dist");
+app.use(express.static(pathToBuild));
+
+// Handle React routing, return all requests to React app
+app.get("*", function (req, res) {
+  res.sendFile(path.join(pathToBuild, "index.html"));
+});;
 
 // Configure Multer for file uploads
 const storage = multer.diskStorage({
