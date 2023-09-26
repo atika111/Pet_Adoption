@@ -3,6 +3,7 @@ const cors = require("cors");
 const cookieParser = require('cookie-parser');
 const run = require("./dbConnect")
 const multer = require('multer')
+const path = require('path')
 
 
 const app = express();
